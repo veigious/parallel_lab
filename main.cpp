@@ -76,7 +76,7 @@ void test_pthread(
 void test_performance(
     const vector<float>& base, int nb,
     const vector<float>& query, int nq, int dim, int top_k, 
-    string mode, int threads, string schedule_type)  // 这个参数之前没用上
+    string mode, int threads, string schedule_type)
 {
     omp_set_num_threads(threads);
     double start_time = omp_get_wtime();
